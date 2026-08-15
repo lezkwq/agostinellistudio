@@ -2,6 +2,10 @@ import { Reveal } from "@/components/Reveal";
 import noivaAsset from "@/assets/noiva-editorial.jpg";
 import noivasAsset from "@/assets/noivas-grupo.jpg";
 import ambienteAsset from "@/assets/ambiente-parede.jpg";
+import unhasNoiteAsset from "@/assets/unhas-noite.jpg";
+import unhasVermelhoAsset from "@/assets/unhas-vermelho.jpg";
+import unhasNudeAsset from "@/assets/unhas-nude.jpg";
+
 
 export const Trabalhos = () => {
   return (
