@@ -70,6 +70,51 @@ export const Trabalhos = () => {
             </figure>
           </Reveal>
         </div>
+
+        <div className="mt-16 md:mt-24">
+          <Reveal>
+            <p className="eyebrow text-gold">Unhas</p>
+          </Reveal>
+
+          <div className="mt-8 grid grid-cols-12 gap-4 md:mt-12 md:gap-6">
+            {[
+              {
+                src: unhasNoiteAsset,
+                alt: "Unhas em preto com glitter prata e detalhes metalizados",
+                span: "col-span-6 md:col-span-4",
+                offset: "",
+                h: "h-[13rem] md:h-[24rem]",
+              },
+              {
+                src: unhasVermelhoAsset,
+                alt: "Unhas em vermelho com glitter dourado e apliques",
+                span: "col-span-6 md:col-span-4",
+                offset: "md:mt-16",
+                h: "h-[13rem] md:h-[24rem]",
+              },
+              {
+                src: unhasNudeAsset,
+                alt: "Unhas em tons terrosos e nude com acabamento amendoado",
+                span: "col-span-12 md:col-span-3 md:col-start-10",
+                offset: "md:mt-6",
+                h: "h-[16rem] md:h-[24rem]",
+              },
+            ].map((img, i) => (
+              <Reveal key={img.alt} delay={i * 0.08} className={`${img.span} ${img.offset}`}>
+                <figure className="img-zoom overflow-hidden">
+                  <img
+                    src={img.src}
+                    alt={img.alt}
+                    loading="lazy"
+                    decoding="async"
+                    className={`${img.h} w-full object-cover object-center`}
+                  />
+                </figure>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+
       </div>
     </section>
   );
