@@ -1,6 +1,6 @@
 import { Reveal } from "@/components/Reveal";
 import ambienteAsset from "@/assets/ambiente-parede.jpg";
-import noivaAsset from "@/assets/noiva-editorial.jpg";
+import fachadaAsset from "@/assets/fachada-retrato.jpg";
 import { ADDRESS_LINES, MAPS_URL } from "@/lib/site";
 
 export const Ambiente = () => {
@@ -53,13 +53,14 @@ export const Ambiente = () => {
             </figure>
             <figure className="img-zoom col-span-8 overflow-hidden md:col-span-4 md:mt-16">
               <img
-                src={noivaAsset}
-                alt="Cliente produzida no interior do salão"
+                src={fachadaAsset}
+                alt="Cliente na entrada do Spazio & L'Élégance em Balneário Camboriú"
                 loading="lazy"
                 decoding="async"
-                className="h-[14rem] w-full object-cover object-[55%_35%] md:h-[22rem]"
+                className="h-[14rem] w-full object-cover object-[50%_30%] md:h-[22rem]"
               />
             </figure>
+
           </div>
         </Reveal>
       </div>
