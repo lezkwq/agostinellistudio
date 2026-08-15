@@ -1,6 +1,6 @@
 import { Reveal } from "@/components/Reveal";
-import ambienteAsset from "@/assets/ambiente-parede.jpg.asset.json";
-import noivaAsset from "@/assets/noiva-editorial.jpg.asset.json";
+import ambienteAsset from "@/assets/ambiente-parede.jpg";
+import noivaAsset from "@/assets/noiva-editorial.jpg";
 import { ADDRESS_LINES, MAPS_URL } from "@/lib/site";
 
 export const Ambiente = () => {
@@ -44,7 +44,7 @@ export const Ambiente = () => {
           <div className="grid grid-cols-12 gap-4 md:gap-6">
             <figure className="img-zoom col-span-12 overflow-hidden md:col-span-8">
               <img
-                src={ambienteAsset.url}
+                src={ambienteAsset}
                 alt="Recepção do salão com parede texturizada e identidade dourada"
                 loading="lazy"
                 decoding="async"
@@ -53,7 +53,7 @@ export const Ambiente = () => {
             </figure>
             <figure className="img-zoom col-span-8 overflow-hidden md:col-span-4 md:mt-16">
               <img
-                src={noivaAsset.url}
+                src={noivaAsset}
                 alt="Cliente produzida no interior do salão"
                 loading="lazy"
                 decoding="async"

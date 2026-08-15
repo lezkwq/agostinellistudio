@@ -1,5 +1,5 @@
 import { Reveal } from "@/components/Reveal";
-import ambienteAsset from "@/assets/ambiente-parede.jpg.asset.json";
+import ambienteAsset from "@/assets/ambiente-parede.jpg";
 
 export const NovoCiclo = () => {
   return (
@@ -8,7 +8,7 @@ export const NovoCiclo = () => {
         <Reveal className="lg:col-span-6">
           <figure className="img-zoom overflow-hidden">
             <img
-              src={ambienteAsset.url}
+              src={ambienteAsset}
               alt="Espaço renovado do Spazio & L'Élégance em Balneário Camboriú"
               loading="lazy"
               decoding="async"

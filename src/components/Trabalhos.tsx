@@ -1,7 +1,7 @@
 import { Reveal } from "@/components/Reveal";
-import noivaAsset from "@/assets/noiva-editorial.jpg.asset.json";
-import noivasAsset from "@/assets/noivas-grupo.jpg.asset.json";
-import ambienteAsset from "@/assets/ambiente-parede.jpg.asset.json";
+import noivaAsset from "@/assets/noiva-editorial.jpg";
+import noivasAsset from "@/assets/noivas-grupo.jpg";
+import ambienteAsset from "@/assets/ambiente-parede.jpg";
 
 export const Trabalhos = () => {
   return (
@@ -27,7 +27,7 @@ export const Trabalhos = () => {
           <Reveal className="col-span-12 md:col-span-7">
             <figure className="img-zoom overflow-hidden">
               <img
-                src={noivasAsset.url}
+                src={noivasAsset}
                 alt="Produção completa de noivas realizada pela equipe do salão"
                 loading="lazy"
                 decoding="async"
@@ -39,7 +39,7 @@ export const Trabalhos = () => {
           <Reveal delay={0.08} className="col-span-7 md:col-span-4 md:col-start-9 md:mt-24">
             <figure className="img-zoom overflow-hidden">
               <img
-                src={noivaAsset.url}
+                src={noivaAsset}
                 alt="Penteado e maquiagem de noiva no Spazio"
                 loading="lazy"
                 decoding="async"
@@ -57,7 +57,7 @@ export const Trabalhos = () => {
           <Reveal delay={0.18} className="col-span-12 md:col-span-6 md:col-start-6">
             <figure className="img-zoom overflow-hidden">
               <img
-                src={ambienteAsset.url}
+                src={ambienteAsset}
                 alt="Detalhe do interior do salão com a identidade Spazio em dourado"
                 loading="lazy"
                 decoding="async"

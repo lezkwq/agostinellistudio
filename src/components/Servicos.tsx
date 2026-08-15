@@ -1,6 +1,6 @@
 import { Reveal } from "@/components/Reveal";
 import { WHATSAPP_URL } from "@/lib/site";
-import ambienteAsset from "@/assets/ambiente-parede.jpg.asset.json";
+import ambienteAsset from "@/assets/ambiente-parede.jpg";
 
 interface ServiceGroup {
   index: string;
@@ -96,7 +96,7 @@ export const Servicos = () => {
         <Reveal delay={0.15} className="lg:col-span-4 lg:col-start-9 lg:sticky lg:top-28 lg:self-start">
           <figure className="img-zoom overflow-hidden">
             <img
-              src={ambienteAsset.url}
+              src={ambienteAsset}
               alt="Parede texturizada com a identidade dourada do Spazio no salão"
               loading="lazy"
               decoding="async"

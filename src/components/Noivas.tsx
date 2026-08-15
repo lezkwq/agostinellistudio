@@ -1,5 +1,5 @@
 import { Reveal } from "@/components/Reveal";
-import noivasAsset from "@/assets/noivas-grupo.jpg.asset.json";
+import noivasAsset from "@/assets/noivas-grupo.jpg";
 import { WHATSAPP_PRODUCAO_URL } from "@/lib/site";
 
 export const Noivas = () => {
@@ -7,7 +7,7 @@ export const Noivas = () => {
     <section className="relative bg-ink">
       <div className="relative h-[80svh] min-h-[30rem] w-full overflow-hidden md:h-[92svh]">
         <img
-          src={noivasAsset.url}
+          src={noivasAsset}
           alt="Grupo de noivas produzidas no salão diante da parede com a identidade Spazio"
           loading="lazy"
           decoding="async"

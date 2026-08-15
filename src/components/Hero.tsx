@@ -1,5 +1,5 @@
 import { motion, useReducedMotion } from "framer-motion";
-import heroAsset from "@/assets/noivas-grupo.jpg.asset.json";
+import heroAsset from "@/assets/noivas-grupo.jpg";
 import { WHATSAPP_URL } from "@/lib/site";
 
 export const Hero = () => {
@@ -8,7 +8,7 @@ export const Hero = () => {
   return (
     <section id="topo" className="relative min-h-[100svh] w-full overflow-hidden bg-ink">
       <img
-        src={heroAsset.url}
+        src={heroAsset}
         alt="Noivas produzidas no Spazio & L'Élégance diante da identidade do salão"
         className="absolute inset-0 h-full w-full object-cover object-[50%_28%] opacity-90"
         fetchPriority="high"
