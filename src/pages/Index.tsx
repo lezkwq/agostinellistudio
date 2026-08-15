@@ -1,15 +1,34 @@
+import { Header } from "@/components/Header";
+import { Hero } from "@/components/Hero";
+import { Manifesto } from "@/components/Manifesto";
+import { Servicos } from "@/components/Servicos";
+import { Trabalhos } from "@/components/Trabalhos";
+import { NovoCiclo } from "@/components/NovoCiclo";
+import { Noivas } from "@/components/Noivas";
+import { ProvaSocial } from "@/components/ProvaSocial";
+import { Ambiente } from "@/components/Ambiente";
+import { Contato } from "@/components/Contato";
+import { SiteFooter } from "@/components/SiteFooter";
+import { MobileCta } from "@/components/MobileCta";
+
 const Index = () => {
   return (
-    <main className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold text-foreground">
-          Novo projeto
-        </h1>
-        <p className="text-muted-foreground">
-          Comece a construir aqui.
-        </p>
-      </div>
-    </main>
+    <div className="min-h-screen bg-ivory">
+      <Header />
+      <main>
+        <Hero />
+        <Manifesto />
+        <Servicos />
+        <Trabalhos />
+        <NovoCiclo />
+        <Noivas />
+        <ProvaSocial />
+        <Ambiente />
+        <Contato />
+      </main>
+      <SiteFooter />
+      <MobileCta />
+    </div>
   );
 };
 
