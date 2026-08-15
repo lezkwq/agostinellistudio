@@ -13,7 +13,17 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        serif: ["'Bodoni Moda'", "Georgia", "serif"],
+        sans: ["Manrope", "system-ui", "sans-serif"],
+      },
       colors: {
+        ink: "hsl(var(--ink))",
+        ivory: "hsl(var(--ivory))",
+        oxblood: "hsl(var(--oxblood))",
+        gold: "hsl(var(--gold))",
+        "warm-white": "hsl(var(--warm-white))",
+
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
