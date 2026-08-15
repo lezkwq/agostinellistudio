@@ -1,6 +1,8 @@
 import { Reveal } from "@/components/Reveal";
 import { WHATSAPP_URL } from "@/lib/site";
 import ambienteAsset from "@/assets/ambiente-parede.jpg";
+import unhasVinhoAsset from "@/assets/unhas-vinho.jpg";
+
 
 interface ServiceGroup {
   index: string;
