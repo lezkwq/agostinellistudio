@@ -99,8 +99,10 @@
   }
 
   .img-zoom img {
-    @apply transition-transform duration-[1200ms] ease-out;
+    @apply transition-transform ease-out;
+    transition-duration: 1200ms;
   }
+
 
   .img-zoom:hover img {
     @apply scale-[1.03];
