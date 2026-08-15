@@ -96,17 +96,27 @@ export const Servicos = () => {
         <Reveal delay={0.15} className="lg:col-span-4 lg:col-start-9 lg:sticky lg:top-28 lg:self-start">
           <figure className="img-zoom overflow-hidden">
             <img
+              src={unhasVinhoAsset}
+              alt="Unhas em esmalte vinho cremoso feitas no Spazio"
+              loading="lazy"
+              decoding="async"
+              className="h-[22rem] w-full object-cover object-center lg:h-[28rem]"
+            />
+          </figure>
+          <figure className="img-zoom mt-4 overflow-hidden md:mt-6">
+            <img
               src={ambienteAsset}
               alt="Parede texturizada com a identidade dourada do Spazio no salão"
               loading="lazy"
               decoding="async"
-              className="h-[26rem] w-full object-cover object-center lg:h-[34rem]"
+              className="h-[12rem] w-full object-cover object-center lg:h-[15rem]"
             />
           </figure>
           <figcaption className="mt-4 font-sans text-xs uppercase tracking-[0.2em] text-muted-foreground">
             Atendimento por horário marcado
           </figcaption>
         </Reveal>
+
       </div>
     </section>
   );
