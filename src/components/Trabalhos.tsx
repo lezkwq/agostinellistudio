@@ -1,7 +1,8 @@
 import { Reveal } from "@/components/Reveal";
-import noivaAsset from "@/assets/noiva-editorial.jpg";
-import noivasAsset from "@/assets/noivas-grupo.jpg";
-import ambienteAsset from "@/assets/ambiente-parede.jpg";
+import loiroMechasAsset from "@/assets/cabelo-loiro-mechas.jpg";
+import lisoLongoAsset from "@/assets/cabelo-liso-longo.jpg";
+import camadasAsset from "@/assets/cabelo-camadas.jpg";
+import bobOnduladoAsset from "@/assets/cabelo-bob-ondulado.jpg";
 import unhasNoiteAsset from "@/assets/unhas-noite.jpg";
 import unhasVermelhoAsset from "@/assets/unhas-vermelho.jpg";
 import unhasNudeAsset from "@/assets/unhas-nude.jpg";
