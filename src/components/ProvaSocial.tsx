@@ -1,5 +1,5 @@
 import { Reveal } from "@/components/Reveal";
-import clienteAsset from "@/assets/cliente-experiencia.jpg";
+import clienteAsset from "@/assets/cliente-experiencia.webp";
 
 interface Review {
   quote: string;

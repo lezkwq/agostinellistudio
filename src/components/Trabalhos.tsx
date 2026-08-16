@@ -1,13 +1,13 @@
 import { Reveal } from "@/components/Reveal";
-import loiroMechasAsset from "@/assets/cabelo-loiro-mechas.jpg";
-import lisoLongoAsset from "@/assets/cabelo-liso-longo.jpg";
-import camadasAsset from "@/assets/cabelo-camadas.jpg";
-import bobOnduladoAsset from "@/assets/cabelo-bob-ondulado.jpg";
-import pixieAsset from "@/assets/cabelo-curto-pixie.jpg";
-import longoOndasAsset from "@/assets/cabelo-longo-ondas.jpg";
-import unhasNoiteAsset from "@/assets/unhas-noite.jpg";
-import unhasVermelhoAsset from "@/assets/unhas-vermelho.jpg";
-import unhasNudeAsset from "@/assets/unhas-nude.jpg";
+import loiroMechasAsset from "@/assets/cabelo-loiro-mechas.webp";
+import lisoLongoAsset from "@/assets/cabelo-liso-longo.webp";
+import camadasAsset from "@/assets/cabelo-camadas.webp";
+import bobOnduladoAsset from "@/assets/cabelo-bob-ondulado.webp";
+import pixieAsset from "@/assets/cabelo-curto-pixie.webp";
+import longoOndasAsset from "@/assets/cabelo-longo-ondas.webp";
+import unhasNoiteAsset from "@/assets/unhas-noite.webp";
+import unhasVermelhoAsset from "@/assets/unhas-vermelho.webp";
+import unhasNudeAsset from "@/assets/unhas-nude.webp";
 
 
 export const Trabalhos = () => {

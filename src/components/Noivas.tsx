@@ -1,5 +1,5 @@
 import { Reveal } from "@/components/Reveal";
-import noivasAsset from "@/assets/noivas-grupo.jpg";
+import noivasAsset from "@/assets/noivas-grupo.webp";
 import { WHATSAPP_PRODUCAO_URL } from "@/lib/site";
 
 export const Noivas = () => {

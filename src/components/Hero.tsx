@@ -1,5 +1,5 @@
 import { motion, useReducedMotion } from "framer-motion";
-import heroAsset from "@/assets/cabelo-morena-ondas.jpg";
+import heroAsset from "@/assets/cabelo-morena-ondas.webp";
 import { WHATSAPP_URL } from "@/lib/site";
 
 export const Hero = () => {

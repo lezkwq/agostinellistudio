@@ -1,5 +1,5 @@
 import { Reveal } from "@/components/Reveal";
-import equipeAsset from "@/assets/noiva-equipe.jpg";
+import equipeAsset from "@/assets/noiva-equipe.webp";
 
 export const NovoCiclo = () => {
   return (

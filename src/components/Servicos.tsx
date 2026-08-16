@@ -1,7 +1,7 @@
 import { Reveal } from "@/components/Reveal";
 import { WHATSAPP_URL } from "@/lib/site";
-import maquiagemAsset from "@/assets/maquiagem-processo.jpg";
-import unhasVinhoAsset from "@/assets/unhas-vinho.jpg";
+import maquiagemAsset from "@/assets/maquiagem-processo.webp";
+import unhasVinhoAsset from "@/assets/unhas-vinho.webp";
 
 
 interface ServiceGroup {
