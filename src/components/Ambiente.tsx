@@ -1,6 +1,6 @@
 import { Reveal } from "@/components/Reveal";
-import ambienteAsset from "@/assets/ambiente-parede.jpg";
-import fachadaAsset from "@/assets/fachada-retrato.jpg";
+import ambienteAsset from "@/assets/ambiente-parede.webp";
+import fachadaAsset from "@/assets/fachada-retrato.webp";
 import { ADDRESS_LINES, MAPS_URL } from "@/lib/site";
 
 export const Ambiente = () => {
