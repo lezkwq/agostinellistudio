@@ -1,6 +1,6 @@
 import { Reveal } from "@/components/Reveal";
 import { WHATSAPP_URL } from "@/lib/site";
-import ambienteAsset from "@/assets/ambiente-parede.jpg";
+import maquiagemAsset from "@/assets/maquiagem-processo.jpg";
 import unhasVinhoAsset from "@/assets/unhas-vinho.jpg";
 
 
@@ -98,17 +98,17 @@ export const Servicos = () => {
         <Reveal delay={0.15} className="lg:col-span-4 lg:col-start-9 lg:sticky lg:top-28 lg:self-start">
           <figure className="img-zoom overflow-hidden">
             <img
-              src={unhasVinhoAsset}
-              alt="Unhas em esmalte vinho cremoso feitas no Spazio"
+              src={maquiagemAsset}
+              alt="Maquiador da casa finalizando a maquiagem de uma cliente com pincel"
               loading="lazy"
               decoding="async"
-              className="h-[22rem] w-full object-cover object-center lg:h-[28rem]"
+              className="h-[22rem] w-full object-cover object-[50%_45%] lg:h-[28rem]"
             />
           </figure>
           <figure className="img-zoom mt-4 overflow-hidden md:mt-6">
             <img
-              src={ambienteAsset}
-              alt="Parede texturizada com a identidade dourada do Spazio no salão"
+              src={unhasVinhoAsset}
+              alt="Unhas em esmalte vinho cremoso feitas no Spazio"
               loading="lazy"
               decoding="async"
               className="h-[12rem] w-full object-cover object-center lg:h-[15rem]"
