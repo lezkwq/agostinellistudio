@@ -32,11 +32,11 @@ export const Trabalhos = () => {
           <Reveal className="col-span-12 md:col-span-7">
             <figure className="img-zoom overflow-hidden">
               <img
-                src={noivasAsset}
-                alt="Produção completa de noivas realizada pela equipe do salão"
+                src={loiroMechasAsset}
+                alt="Mechas loiras com finalização em movimento feitas no salão"
                 loading="lazy"
                 decoding="async"
-                className="h-[24rem] w-full object-cover object-[50%_30%] md:h-[38rem]"
+                className="h-[24rem] w-full object-cover object-[50%_35%] md:h-[38rem]"
               />
             </figure>
           </Reveal>
@@ -44,8 +44,8 @@ export const Trabalhos = () => {
           <Reveal delay={0.08} className="col-span-7 md:col-span-4 md:col-start-9 md:mt-24">
             <figure className="img-zoom overflow-hidden">
               <img
-                src={noivaAsset}
-                alt="Penteado e maquiagem de noiva no Spazio"
+                src={lisoLongoAsset}
+                alt="Cabelo longo liso iluminado com escova e finalização espelhada"
                 loading="lazy"
                 decoding="async"
                 className="h-[18rem] w-full object-cover object-[55%_35%] md:h-[26rem]"
@@ -59,14 +59,26 @@ export const Trabalhos = () => {
             </p>
           </Reveal>
 
-          <Reveal delay={0.18} className="col-span-12 md:col-span-6 md:col-start-6">
+          <Reveal delay={0.18} className="col-span-7 md:col-span-5 md:col-start-6">
             <figure className="img-zoom overflow-hidden">
               <img
-                src={ambienteAsset}
-                alt="Detalhe do interior do salão com a identidade Spazio em dourado"
+                src={camadasAsset}
+                alt="Corte em camadas com coloração acobreada e pontas movimentadas"
                 loading="lazy"
                 decoding="async"
-                className="h-[16rem] w-full object-cover object-center md:h-[22rem]"
+                className="h-[16rem] w-full object-cover object-[50%_35%] md:h-[24rem]"
+              />
+            </figure>
+          </Reveal>
+
+          <Reveal delay={0.24} className="col-span-5 self-end md:col-span-3 md:col-start-11 md:mb-6">
+            <figure className="img-zoom overflow-hidden">
+              <img
+                src={bobOnduladoAsset}
+                alt="Bob loiro com ondas suaves finalizado na vitrine do Spazio"
+                loading="lazy"
+                decoding="async"
+                className="h-[13rem] w-full object-cover object-[50%_45%] md:h-[17rem]"
               />
             </figure>
           </Reveal>
