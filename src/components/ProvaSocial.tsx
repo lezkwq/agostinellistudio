@@ -1,4 +1,5 @@
 import { Reveal } from "@/components/Reveal";
+import clienteAsset from "@/assets/cliente-experiencia.jpg";
 
 interface Review {
   quote: string;
@@ -29,6 +30,16 @@ export const ProvaSocial = () => {
           </p>
           <span className="rule my-8 text-gold" aria-hidden="true" />
           <p className="font-sans text-sm text-muted-foreground">54 avaliações</p>
+
+          <figure className="img-zoom mt-10 overflow-hidden lg:mt-14">
+            <img
+              src={clienteAsset}
+              alt="Cliente sorrindo durante o atendimento com profissional do salão"
+              loading="lazy"
+              decoding="async"
+              className="h-[18rem] w-full object-cover object-[50%_35%] lg:h-[24rem]"
+            />
+          </figure>
         </Reveal>
 
         <div className="lg:col-span-7 lg:col-start-6 space-y-12">
