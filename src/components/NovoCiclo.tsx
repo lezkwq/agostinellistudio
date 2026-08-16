@@ -1,5 +1,5 @@
 import { Reveal } from "@/components/Reveal";
-import ambienteAsset from "@/assets/ambiente-parede.jpg";
+import equipeAsset from "@/assets/noiva-equipe.jpg";
 
 export const NovoCiclo = () => {
   return (
@@ -8,11 +8,11 @@ export const NovoCiclo = () => {
         <Reveal className="lg:col-span-6">
           <figure className="img-zoom overflow-hidden">
             <img
-              src={ambienteAsset}
-              alt="Espaço renovado do Spazio & L'Élégance em Balneário Camboriú"
+              src={equipeAsset}
+              alt="Denis Bittencourt e Evandro Amaral finalizando o penteado de uma noiva na entrada do salão"
               loading="lazy"
               decoding="async"
-              className="h-[20rem] w-full object-cover object-center md:h-[32rem]"
+              className="h-[20rem] w-full object-cover object-[45%_40%] md:h-[32rem]"
             />
           </figure>
         </Reveal>
