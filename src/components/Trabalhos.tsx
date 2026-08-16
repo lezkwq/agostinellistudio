@@ -3,6 +3,8 @@ import loiroMechasAsset from "@/assets/cabelo-loiro-mechas.jpg";
 import lisoLongoAsset from "@/assets/cabelo-liso-longo.jpg";
 import camadasAsset from "@/assets/cabelo-camadas.jpg";
 import bobOnduladoAsset from "@/assets/cabelo-bob-ondulado.jpg";
+import pixieAsset from "@/assets/cabelo-curto-pixie.jpg";
+import longoOndasAsset from "@/assets/cabelo-longo-ondas.jpg";
 import unhasNoiteAsset from "@/assets/unhas-noite.jpg";
 import unhasVermelhoAsset from "@/assets/unhas-vermelho.jpg";
 import unhasNudeAsset from "@/assets/unhas-nude.jpg";
@@ -79,6 +81,30 @@ export const Trabalhos = () => {
                 loading="lazy"
                 decoding="async"
                 className="h-[13rem] w-full object-cover object-[50%_45%] md:h-[17rem]"
+              />
+            </figure>
+          </Reveal>
+
+          <Reveal delay={0.3} className="col-span-6 md:col-span-3 md:col-start-2 md:mt-10">
+            <figure className="img-zoom overflow-hidden">
+              <img
+                src={pixieAsset}
+                alt="Corte curto pixie loiro acinzentado finalizado no salão"
+                loading="lazy"
+                decoding="async"
+                className="h-[13rem] w-full object-cover object-[45%_40%] md:h-[20rem]"
+              />
+            </figure>
+          </Reveal>
+
+          <Reveal delay={0.36} className="col-span-6 md:col-span-4 md:col-start-6 md:mt-10">
+            <figure className="img-zoom overflow-hidden">
+              <img
+                src={longoOndasAsset}
+                alt="Cabelo longo acobreado com pontas onduladas e brilho"
+                loading="lazy"
+                decoding="async"
+                className="h-[13rem] w-full object-cover object-[50%_35%] md:h-[20rem]"
               />
             </figure>
           </Reveal>
