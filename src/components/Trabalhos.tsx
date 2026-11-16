@@ -1,4 +1,76 @@
+import { useLayoutEffect, useRef, useState } from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
 import { Reveal } from "@/components/Reveal";
+
+const MOBILE_GALLERY = [
+  { src: "/images/hair-long-sleek.jpg", alt: "Cabelos longos, alinhados e brilhantes" },
+  { src: "/images/hair-pink-streaks.jpg", alt: "Mechas cor-de-rosa em cabelo castanho" },
+  { src: "/images/hair-bob.jpg", alt: "Corte bob curto com acabamento brilhante" },
+  { src: "/images/hair-shine.jpg", alt: "Cabelo castanho longo e iluminado" },
+  { src: "/images/hero-hair-highlights.jpg", alt: "Cabelo longo com ondas e mechas iluminadas" },
+  { src: "/images/nails-art.jpg", alt: "Nail art preta e prata em unhas alongadas" },
+  { src: "/images/nails-brown.jpg", alt: "Manicure em esmalte marrom brilhante" },
+  { src: "/images/nails-red.jpg", alt: "Manicure vermelha com detalhe em glitter" },
+];
+
+const MobileGallery = () => {
+  const sectionRef = useRef<HTMLDivElement>(null);
+  const trackRef = useRef<HTMLDivElement>(null);
+  const [travel, setTravel] = useState(0);
+  const { scrollYProgress } = useScroll({
+    target: sectionRef,
+    offset: ["start start", "end end"],
+  });
+  const x = useTransform(scrollYProgress, [0, 1], [0, -travel]);
+
+  useLayoutEffect(() => {
+    const track = trackRef.current;
+    if (!track) return;
+
+    const updateTravel = () => {
+      setTravel(Math.max(0, track.scrollWidth - window.innerWidth));
+    };
+
+    const observer = new ResizeObserver(updateTravel);
+    observer.observe(track);
+    window.addEventListener("resize", updateTravel, { passive: true });
+    updateTravel();
+
+    return () => {
+      observer.disconnect();
+      window.removeEventListener("resize", updateTravel);
+    };
+  }, []);
+
+  return (
+    <div
+      ref={sectionRef}
+      className="relative -mx-6 mt-12 md:hidden"
+      style={{ height: `calc(100svh + ${travel}px)` }}
+      aria-label="Galeria de cabelos e unhas"
+    >
+      <div className="sticky top-0 flex h-[100svh] w-screen items-center overflow-hidden">
+        <motion.div
+          ref={trackRef}
+          style={{ x }}
+          className="flex w-max gap-4 px-6 will-change-transform"
+        >
+          {MOBILE_GALLERY.map((image) => (
+            <figure key={image.src} className="w-[74vw] flex-none overflow-hidden">
+              <img
+                src={image.src}
+                alt={image.alt}
+                loading="lazy"
+                decoding="async"
+                className="block aspect-[2/3] w-full object-cover"
+              />
+            </figure>
+          ))}
+        </motion.div>
+      </div>
+    </div>
+  );
+};
 
 
 export const Trabalhos = () => {
@@ -21,7 +93,9 @@ export const Trabalhos = () => {
           </Reveal>
         </div>
 
-        <div className="mt-14 grid grid-cols-12 gap-4 md:mt-20 md:gap-6">
+        <MobileGallery />
+
+        <div className="mt-14 hidden grid-cols-12 gap-4 md:mt-20 md:grid md:gap-6">
           <Reveal className="col-span-12 md:col-span-7">
             <figure className="img-zoom overflow-hidden">
               <img
@@ -89,7 +163,7 @@ export const Trabalhos = () => {
           </Reveal>
         </div>
 
-        <div className="mt-16 md:mt-24">
+        <div className="mt-16 hidden md:mt-24 md:block">
           <Reveal>
             <p className="eyebrow text-gold">Unhas</p>
           </Reveal>

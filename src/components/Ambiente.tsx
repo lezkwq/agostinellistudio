@@ -47,26 +47,26 @@ export const Ambiente = () => {
                 alt="Lavatório e área de cuidado capilar do Agostinelli Studio"
                 loading="lazy"
                 decoding="async"
-                className="block aspect-[2/3] w-full object-cover object-center md:aspect-auto md:h-[28rem]"
+                className="h-[18rem] w-full object-cover object-center md:h-[28rem]"
               />
             </figure>
-            <figure className="img-zoom col-span-12 overflow-hidden md:col-span-4 md:mt-16">
+            <figure className="img-zoom col-span-8 overflow-hidden md:col-span-4 md:mt-16">
               <img
                 src="/images/studio-products.jpg"
                 alt="Seleção de produtos para os cuidados dos cabelos no studio"
                 loading="lazy"
                 decoding="async"
-                className="block aspect-[2/3] w-full object-cover object-[50%_30%] md:aspect-auto md:h-[22rem]"
+                className="h-[14rem] w-full object-cover object-[50%_30%] md:h-[22rem]"
               />
             </figure>
 
-            <figure className="img-zoom col-span-12 overflow-hidden md:col-span-3 md:col-start-10 md:mt-6">
+            <figure className="img-zoom col-span-4 overflow-hidden md:col-span-3 md:col-start-10 md:mt-6">
               <img
                 src="/images/studio-facade.jpg"
                 alt="Fachada do Agostinelli Studio em Camboriú"
                 loading="lazy"
                 decoding="async"
-                className="block aspect-[2/3] w-full object-cover object-center md:aspect-auto md:h-[13rem]"
+                className="h-[10rem] w-full object-cover object-center md:h-[13rem]"
               />
             </figure>
 
