@@ -95,7 +95,7 @@ export const Servicos = () => {
               alt="Detalhe de lash design realizado no Agostinelli Studio"
               loading="lazy"
               decoding="async"
-              className="h-[22rem] w-full object-cover object-[50%_45%] lg:h-[28rem]"
+              className="block aspect-[2/3] w-full object-cover object-[50%_45%] lg:aspect-auto lg:h-[28rem]"
             />
           </figure>
           <figure className="img-zoom mt-4 overflow-hidden md:mt-6">
@@ -104,7 +104,7 @@ export const Servicos = () => {
               alt="Design de sobrancelhas sendo realizado no Agostinelli Studio"
               loading="lazy"
               decoding="async"
-              className="h-[12rem] w-full object-cover object-[50%_38%] lg:h-[15rem]"
+              className="block aspect-[2/3] w-full object-cover object-[50%_38%] lg:aspect-auto lg:h-[15rem]"
             />
           </figure>
           <figure className="img-zoom mt-4 overflow-hidden md:mt-6">
@@ -113,7 +113,7 @@ export const Servicos = () => {
               alt="Manicure em esmalte vinho feita no Agostinelli Studio"
               loading="lazy"
               decoding="async"
-              className="h-[12rem] w-full object-cover object-center lg:h-[15rem]"
+              className="block aspect-[2/3] w-full object-cover object-center lg:aspect-auto lg:h-[15rem]"
             />
           </figure>
           <figcaption className="mt-4 font-sans text-xs uppercase tracking-[0.2em] text-muted-foreground">

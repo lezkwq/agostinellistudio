@@ -7,9 +7,9 @@ export const Hero = () => {
   return (
     <section id="topo" className="relative min-h-[100svh] w-full overflow-hidden bg-ink">
       <img
-        src="/images/hero-hair-highlights.jpg"
-        alt="Resultado de cabelo iluminado com ondas no Agostinelli Studio"
-        className="absolute inset-0 h-full w-full object-cover object-[58%_28%] opacity-90"
+        src="/images/hair-pink-bob.jpg"
+        alt="Corte curto com mechas rosas, visto de lado, feito no Agostinelli Studio"
+        className="absolute inset-0 h-full w-full object-cover object-[58%_34%] opacity-90"
         fetchPriority="high"
         decoding="async"
       />

@@ -35,15 +35,6 @@ export const ProvaSocial = () => {
           <span className="rule my-8 text-gold" aria-hidden="true" />
           <p className="font-sans text-sm text-muted-foreground">{REVIEW_COUNT}</p>
 
-          <figure className="img-zoom mt-10 overflow-hidden lg:mt-14">
-            <img
-              src="/images/hair-pink-bob.jpg"
-              alt="Resultado de cabelo com ondas e mechas feito no Agostinelli Studio"
-              loading="lazy"
-              decoding="async"
-              className="h-[18rem] w-full object-cover object-[50%_35%] lg:h-[24rem]"
-            />
-          </figure>
         </Reveal>
 
         <div className="lg:col-span-7 lg:col-start-6 space-y-12">

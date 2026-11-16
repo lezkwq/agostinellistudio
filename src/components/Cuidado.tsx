@@ -4,7 +4,7 @@ import { WHATSAPP_SERVICOS_URL } from "@/lib/site";
 export const Cuidado = () => {
   return (
     <section className="relative bg-ink">
-      <div className="relative h-[80svh] min-h-[30rem] w-full overflow-hidden md:h-[92svh]">
+      <div className="relative aspect-[2/3] min-h-[30rem] w-full overflow-hidden md:aspect-auto md:h-[92svh]">
         <img
           src="/images/hair-products.jpg"
           alt="Produtos profissionais para tratamentos e cuidados dos cabelos"

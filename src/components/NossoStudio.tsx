@@ -11,7 +11,7 @@ export const NossoStudio = () => {
               alt="Espaço de atendimento do Agostinelli Studio, preparado para receber clientes"
               loading="lazy"
               decoding="async"
-              className="h-[20rem] w-full object-cover object-[45%_40%] md:h-[32rem]"
+              className="block aspect-[2/3] w-full object-cover object-[45%_40%] md:aspect-auto md:h-[32rem]"
             />
           </figure>
         </Reveal>
