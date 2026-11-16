@@ -1,5 +1,4 @@
 import { motion, useReducedMotion } from "framer-motion";
-import heroAsset from "@/assets/cabelo-morena-ondas.webp";
 import { WHATSAPP_URL } from "@/lib/site";
 
 export const Hero = () => {
@@ -8,9 +7,9 @@ export const Hero = () => {
   return (
     <section id="topo" className="relative min-h-[100svh] w-full overflow-hidden bg-ink">
       <img
-        src={heroAsset}
-        alt="Cabelo castanho com ondas e finalização feita no Spazio & L'Élégance"
-        className="absolute inset-0 h-full w-full object-cover object-[58%_30%] opacity-90"
+        src="/images/hero-hair-highlights.jpg"
+        alt="Resultado de cabelo iluminado com ondas no Agostinelli Studio"
+        className="absolute inset-0 h-full w-full object-cover object-[58%_28%] opacity-90"
         fetchPriority="high"
         decoding="async"
       />
@@ -26,11 +25,10 @@ export const Hero = () => {
           transition={{ duration: 1.1, ease: [0.22, 1, 0.36, 1] }}
           className="max-w-[22ch] md:max-w-[18ch]"
         >
-          <p className="eyebrow text-warm-white/70 mb-6">Balneário Camboriú, SC</p>
+          <p className="eyebrow text-warm-white/70 mb-6">Camboriú, Santa Catarina</p>
 
           <h1 className="display text-warm-white text-[3.25rem] sm:text-7xl lg:text-[7rem] xl:text-[7.5rem]">
-            Beleza com{" "}
-            <span className="italic font-normal">sofisticação.</span>
+            Seu momento de beleza começa aqui.
           </h1>
         </motion.div>
 
@@ -41,7 +39,7 @@ export const Hero = () => {
           className="mt-10 flex flex-col gap-8 md:flex-row md:items-end md:justify-between"
         >
           <p className="font-sans text-sm md:text-base text-warm-white/80 max-w-sm leading-relaxed">
-            Cabelos, unhas e estética no coração de Balneário Camboriú.
+            Cabelos, unhas, cílios e sobrancelhas. Um cuidado acolhedor, da cabeça aos pés.
           </p>
 
           <div className="flex flex-wrap items-center gap-4">
@@ -54,10 +52,10 @@ export const Hero = () => {
               Agendar horário
             </a>
             <a
-              href="#spazio"
+              href="#studio"
               className="btn-editorial border-warm-white/60 text-warm-white hover:bg-warm-white hover:text-ink"
             >
-              Conhecer o Spazio
+              Conhecer o Studio
             </a>
           </div>
         </motion.div>

@@ -1,7 +1,5 @@
 import { Reveal } from "@/components/Reveal";
 import { WHATSAPP_URL } from "@/lib/site";
-import maquiagemAsset from "@/assets/maquiagem-processo.webp";
-import unhasVinhoAsset from "@/assets/unhas-vinho.webp";
 
 
 interface ServiceGroup {
@@ -19,9 +17,9 @@ const GROUPS: ServiceGroup[] = [
       "Cortes",
       "Coloração",
       "Mechas",
-      "Reconstrução capilar",
-      "Terapia capilar",
-      "Tratamentos e cuidados capilares",
+      "Escova e finalização",
+      "Hidratação e cronograma capilar",
+      "Tratamentos capilares",
     ],
   },
   {
@@ -31,19 +29,14 @@ const GROUPS: ServiceGroup[] = [
   },
   {
     index: "03",
-    title: "Produção",
-    items: [
-      "Maquiagem",
-      "Penteados",
-      "Produções para eventos",
-      "Produções para noivas",
-    ],
+    title: "Olhar",
+    items: ["Design de sobrancelhas", "Lash design", "Alongamento de cílios"],
   },
   {
     index: "04",
-    title: "Estética",
+    title: "Um cuidado completo",
     items: [],
-    note: "Consulte os procedimentos disponíveis pelo WhatsApp.",
+    note: "Agende seu momento e consulte os serviços disponíveis pelo WhatsApp.",
   },
 ];
 
@@ -98,8 +91,8 @@ export const Servicos = () => {
         <Reveal delay={0.15} className="lg:col-span-4 lg:col-start-9 lg:sticky lg:top-28 lg:self-start">
           <figure className="img-zoom overflow-hidden">
             <img
-              src={maquiagemAsset}
-              alt="Maquiador da casa finalizando a maquiagem de uma cliente com pincel"
+              src="/images/lashes.jpg"
+              alt="Detalhe de lash design realizado no Agostinelli Studio"
               loading="lazy"
               decoding="async"
               className="h-[22rem] w-full object-cover object-[50%_45%] lg:h-[28rem]"
@@ -107,8 +100,17 @@ export const Servicos = () => {
           </figure>
           <figure className="img-zoom mt-4 overflow-hidden md:mt-6">
             <img
-              src={unhasVinhoAsset}
-              alt="Unhas em esmalte vinho cremoso feitas no Spazio"
+              src="/images/brows-design.jpg"
+              alt="Design de sobrancelhas sendo realizado no Agostinelli Studio"
+              loading="lazy"
+              decoding="async"
+              className="h-[12rem] w-full object-cover object-[50%_38%] lg:h-[15rem]"
+            />
+          </figure>
+          <figure className="img-zoom mt-4 overflow-hidden md:mt-6">
+            <img
+              src="/images/nails-burgundy.jpg"
+              alt="Manicure em esmalte vinho feita no Agostinelli Studio"
               loading="lazy"
               decoding="async"
               className="h-[12rem] w-full object-cover object-center lg:h-[15rem]"

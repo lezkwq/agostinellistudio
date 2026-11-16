@@ -1,14 +1,13 @@
 import { Reveal } from "@/components/Reveal";
-import noivasAsset from "@/assets/noivas-grupo.webp";
-import { WHATSAPP_PRODUCAO_URL } from "@/lib/site";
+import { WHATSAPP_SERVICOS_URL } from "@/lib/site";
 
-export const Noivas = () => {
+export const Cuidado = () => {
   return (
     <section className="relative bg-ink">
       <div className="relative h-[80svh] min-h-[30rem] w-full overflow-hidden md:h-[92svh]">
         <img
-          src={noivasAsset}
-          alt="Grupo de noivas produzidas no salão diante da parede com a identidade Spazio"
+          src="/images/hair-products.jpg"
+          alt="Produtos profissionais para tratamentos e cuidados dos cabelos"
           loading="lazy"
           decoding="async"
           className="h-full w-full object-cover object-[50%_30%]"
@@ -19,23 +18,22 @@ export const Noivas = () => {
           <div className="shell pb-14 md:pb-20">
             <Reveal>
               <h2 className="display max-w-[16ch] text-warm-white text-4xl sm:text-6xl lg:text-[5.5rem]">
-                Para dias que pedem uma{" "}
-                <span className="italic">produção completa.</span>
+                Um tempo para você. Cuidado de verdade, da cabeça aos pés.
               </h2>
             </Reveal>
 
             <Reveal delay={0.12}>
               <div className="mt-10 flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
                 <p className="max-w-md font-sans text-sm md:text-base leading-relaxed text-warm-white/80">
-                  Cabelo, maquiagem e preparação para eventos, formaturas e casamentos.
+                  Um cabelo renovado, mãos cuidadas e um olhar que realça quem você é.
                 </p>
                 <a
-                  href={WHATSAPP_PRODUCAO_URL}
+                  href={WHATSAPP_SERVICOS_URL}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn-editorial self-start border-warm-white text-warm-white hover:bg-warm-white hover:text-ink"
                 >
-                  Falar sobre minha produção
+                  Quero agendar meu momento
                 </a>
               </div>
             </Reveal>

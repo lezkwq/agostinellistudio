@@ -16,8 +16,8 @@
     --popover: 38 55% 96%;
     --popover-foreground: 30 15% 8%;
 
-    /* Vinho profundo */
-    --primary: 5 53% 26%;
+    /* Preto suave da identidade do Studio */
+    --primary: 30 12% 9%;
     --primary-foreground: 38 55% 96%;
 
     --secondary: 40 30% 85%;
@@ -26,21 +26,21 @@
     --muted: 40 25% 84%;
     --muted-foreground: 30 10% 34%;
 
-    /* Dourado envelhecido */
-    --accent: 37 41% 49%;
+    /* Dourado champagne da identidade do Studio */
+    --accent: 39 42% 54%;
     --accent-foreground: 30 15% 8%;
 
-    --destructive: 5 53% 26%;
+    --destructive: 30 12% 9%;
     --destructive-foreground: 38 55% 96%;
 
     --border: 36 22% 78%;
     --input: 36 22% 78%;
-    --ring: 37 41% 49%;
+    --ring: 39 42% 54%;
 
     --ink: 30 15% 8%;
     --ivory: 40 45% 91%;
-    --oxblood: 5 53% 26%;
-    --gold: 37 41% 49%;
+    --oxblood: 30 12% 9%;
+    --gold: 39 42% 54%;
     --warm-white: 38 55% 96%;
 
     --radius: 0.125rem;

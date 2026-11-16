@@ -26,7 +26,7 @@ export const MobileCta = () => {
         rel="noopener noreferrer"
         className="block bg-ink px-6 py-4 text-center font-sans text-[11px] uppercase tracking-[0.24em] text-warm-white"
       >
-        Agendar horário
+        Agendar pelo WhatsApp
       </a>
     </div>
   );

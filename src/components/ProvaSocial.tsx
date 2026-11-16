@@ -1,21 +1,25 @@
 import { Reveal } from "@/components/Reveal";
-import clienteAsset from "@/assets/cliente-experiencia.webp";
+import { RATING, REVIEW_COUNT } from "@/lib/site";
 
 interface Review {
   quote: string;
+  author: string;
 }
 
 const REVIEWS: Review[] = [
   {
     quote:
-      "Amo esse salão. Evandro cuida das minhas madeixas há dez anos. Só tenho a agradecer o carinho e o cuidado. E minha pedicure favorita, a Cleci, não troco por nada.",
+      "Encontrei meu salão. Nunca me senti tão bem tratada e cuidada.",
+    author: "Bruna Ruzi",
   },
   {
     quote:
-      "Atendimento perfeito e impecável, com excelentes profissionais. Todos são muito educados e simpáticos.",
+      "A Kátia me ajudou a realizar meu sonho e foi muito atenciosa em cada etapa.",
+    author: "Amanda da Graça",
   },
   {
-    quote: "Recomendo. Produtos de boa qualidade e excelentes profissionais.",
+    quote: "No Agostinelli Studio me sinto cuidada da cabeça aos pés.",
+    author: "Elaine Ruzi",
   },
 ];
 
@@ -24,17 +28,17 @@ export const ProvaSocial = () => {
     <section className="bg-warm-white py-24 md:py-36">
       <div className="shell grid gap-14 lg:grid-cols-12">
         <Reveal className="lg:col-span-4">
-          <p className="display text-6xl md:text-8xl text-ink">4,8</p>
-          <p className="mt-4 font-sans text-sm uppercase tracking-[0.22em] text-muted-foreground">
-            no Google
+          <p className="display text-6xl md:text-8xl text-ink">{RATING}</p>
+          <p className="mt-3 font-sans text-sm tracking-[0.12em] text-gold" aria-label="5 estrelas">
+            ★★★★★ <span className="ml-2 text-muted-foreground">no Google</span>
           </p>
           <span className="rule my-8 text-gold" aria-hidden="true" />
-          <p className="font-sans text-sm text-muted-foreground">54 avaliações</p>
+          <p className="font-sans text-sm text-muted-foreground">{REVIEW_COUNT}</p>
 
           <figure className="img-zoom mt-10 overflow-hidden lg:mt-14">
             <img
-              src={clienteAsset}
-              alt="Cliente sorrindo durante o atendimento com profissional do salão"
+              src="/images/hair-pink-bob.jpg"
+              alt="Resultado de cabelo com ondas e mechas feito no Agostinelli Studio"
               loading="lazy"
               decoding="async"
               className="h-[18rem] w-full object-cover object-[50%_35%] lg:h-[24rem]"
@@ -49,6 +53,9 @@ export const ProvaSocial = () => {
                 <p className="font-serif text-xl md:text-2xl leading-snug text-ink">
                   {review.quote}
                 </p>
+                <cite className="mt-5 block not-italic font-sans text-xs uppercase tracking-[0.18em] text-muted-foreground">
+                  {review.author} · Google
+                </cite>
               </blockquote>
             </Reveal>
           ))}

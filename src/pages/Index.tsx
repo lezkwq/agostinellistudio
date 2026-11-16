@@ -3,8 +3,8 @@ import { Hero } from "@/components/Hero";
 import { Manifesto } from "@/components/Manifesto";
 import { Servicos } from "@/components/Servicos";
 import { Trabalhos } from "@/components/Trabalhos";
-import { NovoCiclo } from "@/components/NovoCiclo";
-import { Noivas } from "@/components/Noivas";
+import { NossoStudio } from "@/components/NossoStudio";
+import { Cuidado } from "@/components/Cuidado";
 import { ProvaSocial } from "@/components/ProvaSocial";
 import { Ambiente } from "@/components/Ambiente";
 import { Contato } from "@/components/Contato";
@@ -20,8 +20,8 @@ const Index = () => {
         <Manifesto />
         <Servicos />
         <Trabalhos />
-        <NovoCiclo />
-        <Noivas />
+        <NossoStudio />
+        <Cuidado />
         <ProvaSocial />
         <Ambiente />
         <Contato />

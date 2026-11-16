@@ -1,13 +1,4 @@
 import { Reveal } from "@/components/Reveal";
-import loiroMechasAsset from "@/assets/cabelo-loiro-mechas.webp";
-import lisoLongoAsset from "@/assets/cabelo-liso-longo.webp";
-import camadasAsset from "@/assets/cabelo-camadas.webp";
-import bobOnduladoAsset from "@/assets/cabelo-bob-ondulado.webp";
-import pixieAsset from "@/assets/cabelo-curto-pixie.webp";
-import longoOndasAsset from "@/assets/cabelo-longo-ondas.webp";
-import unhasNoiteAsset from "@/assets/unhas-noite.webp";
-import unhasVermelhoAsset from "@/assets/unhas-vermelho.webp";
-import unhasNudeAsset from "@/assets/unhas-nude.webp";
 
 
 export const Trabalhos = () => {
@@ -18,14 +9,14 @@ export const Trabalhos = () => {
           <Reveal className="md:col-span-5">
             <p className="eyebrow text-gold">Trabalhos</p>
             <h2 className="display mt-6 text-4xl md:text-6xl text-ink">
-              Cortes, cor, unhas
+              Cabelos, unhas
               <br />
-              <span className="italic">e produções.</span>
+              <span className="italic">e beleza.</span>
             </h2>
           </Reveal>
           <Reveal delay={0.1} className="md:col-span-4 md:col-start-9">
             <p className="font-sans text-sm leading-relaxed text-muted-foreground">
-              Trabalhos realizados no Spazio, em Balneário Camboriú.
+              Um pouco do cuidado e dos detalhes que fazem cada visita ser sua.
             </p>
           </Reveal>
         </div>
@@ -34,8 +25,8 @@ export const Trabalhos = () => {
           <Reveal className="col-span-12 md:col-span-7">
             <figure className="img-zoom overflow-hidden">
               <img
-                src={loiroMechasAsset}
-                alt="Mechas loiras com finalização em movimento feitas no salão"
+                src="/images/hair-long-sleek.jpg"
+                alt="Cabelos longos, alinhados e brilhantes finalizados no Agostinelli Studio"
                 loading="lazy"
                 decoding="async"
                 className="h-[24rem] w-full object-cover object-[50%_35%] md:h-[38rem]"
@@ -46,8 +37,8 @@ export const Trabalhos = () => {
           <Reveal delay={0.08} className="col-span-7 md:col-span-4 md:col-start-9 md:mt-24">
             <figure className="img-zoom overflow-hidden">
               <img
-                src={lisoLongoAsset}
-                alt="Cabelo longo liso iluminado com escova e finalização espelhada"
+                src="/images/hair-pink-streaks.jpg"
+                alt="Mechas cor-de-rosa em cabelo castanho"
                 loading="lazy"
                 decoding="async"
                 className="h-[18rem] w-full object-cover object-[55%_35%] md:h-[26rem]"
@@ -57,15 +48,15 @@ export const Trabalhos = () => {
 
           <Reveal delay={0.14} className="col-span-5 self-end md:col-span-3 md:col-start-2">
             <p className="font-serif italic text-lg md:text-2xl text-ink/80">
-              Cabelo, cor e finalização feitos por profissionais da casa.
+              Cuidado pensado para revelar a beleza que já é sua.
             </p>
           </Reveal>
 
           <Reveal delay={0.18} className="col-span-7 md:col-span-5 md:col-start-6">
             <figure className="img-zoom overflow-hidden">
               <img
-                src={camadasAsset}
-                alt="Corte em camadas com coloração acobreada e pontas movimentadas"
+                src="/images/hair-pink-bob.jpg"
+                alt="Corte curto com mechas rosas criado no Agostinelli Studio"
                 loading="lazy"
                 decoding="async"
                 className="h-[16rem] w-full object-cover object-[50%_35%] md:h-[24rem]"
@@ -76,8 +67,8 @@ export const Trabalhos = () => {
           <Reveal delay={0.24} className="col-span-5 self-end md:col-span-3 md:col-start-11 md:mb-6">
             <figure className="img-zoom overflow-hidden">
               <img
-                src={bobOnduladoAsset}
-                alt="Bob loiro com ondas suaves finalizado na vitrine do Spazio"
+                src="/images/hair-bob.jpg"
+                alt="Corte bob curto com acabamento brilhante"
                 loading="lazy"
                 decoding="async"
                 className="h-[13rem] w-full object-cover object-[50%_45%] md:h-[17rem]"
@@ -88,8 +79,8 @@ export const Trabalhos = () => {
           <Reveal delay={0.3} className="col-span-6 md:col-span-3 md:col-start-2 md:mt-10">
             <figure className="img-zoom overflow-hidden">
               <img
-                src={pixieAsset}
-                alt="Corte curto pixie loiro acinzentado finalizado no salão"
+                src="/images/hair-shine.jpg"
+                alt="Cabelo castanho longo e iluminado com acabamento brilhante"
                 loading="lazy"
                 decoding="async"
                 className="h-[13rem] w-full object-cover object-[45%_40%] md:h-[20rem]"
@@ -100,8 +91,8 @@ export const Trabalhos = () => {
           <Reveal delay={0.36} className="col-span-6 md:col-span-4 md:col-start-6 md:mt-10">
             <figure className="img-zoom overflow-hidden">
               <img
-                src={longoOndasAsset}
-                alt="Cabelo longo acobreado com pontas onduladas e brilho"
+                src="/images/hero-hair-highlights.jpg"
+                alt="Cabelo longo com ondas e mechas iluminadas"
                 loading="lazy"
                 decoding="async"
                 className="h-[13rem] w-full object-cover object-[50%_35%] md:h-[20rem]"
@@ -118,22 +109,22 @@ export const Trabalhos = () => {
           <div className="mt-8 grid grid-cols-12 gap-4 md:mt-12 md:gap-6">
             {[
               {
-                src: unhasNoiteAsset,
-                alt: "Unhas em preto com glitter prata e detalhes metalizados",
+                src: "/images/nails-art.jpg",
+                alt: "Nail art preta e prata em unhas alongadas",
                 span: "col-span-6 md:col-span-4",
                 offset: "",
                 h: "h-[13rem] md:h-[24rem]",
               },
               {
-                src: unhasVermelhoAsset,
-                alt: "Unhas em vermelho com glitter dourado e apliques",
+                src: "/images/nails-brown.jpg",
+                alt: "Manicure em esmalte marrom brilhante",
                 span: "col-span-6 md:col-span-4",
                 offset: "md:mt-16",
                 h: "h-[13rem] md:h-[24rem]",
               },
               {
-                src: unhasNudeAsset,
-                alt: "Unhas em tons terrosos e nude com acabamento amendoado",
+                src: "/images/nails-red.jpg",
+                alt: "Manicure vermelha com detalhe em glitter",
                 span: "col-span-12 md:col-span-3 md:col-start-10",
                 offset: "md:mt-6",
                 h: "h-[16rem] md:h-[24rem]",

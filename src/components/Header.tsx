@@ -33,10 +33,11 @@ export const Header = () => {
       <div className="shell flex items-center justify-between py-5 md:py-6">
         <a
           href="#topo"
-          className="font-serif text-base md:text-lg tracking-[0.06em]"
-          aria-label="Spazio & L'Élégance, início"
+          className="flex items-center gap-3 font-serif text-base md:text-lg tracking-[0.06em]"
+          aria-label="Agostinelli Studio, início"
         >
-          Spazio <span className="italic">&amp;</span> L&apos;Élégance
+          <img src="/images/brand-mark.png" alt="" className="h-9 w-9 rounded-full object-cover" />
+          <span>Agostinelli <span className="italic">Studio</span></span>
         </a>
 
         <nav aria-label="Navegação principal" className="hidden lg:flex items-center gap-10">

@@ -5,6 +5,7 @@ import {
   INSTAGRAM_HANDLE,
   INSTAGRAM_URL,
   MAPS_URL,
+  PHONE_DISPLAY,
   WHATSAPP_URL,
 } from "@/lib/site";
 
@@ -14,10 +15,10 @@ export const SiteFooter = () => {
       <div className="shell flex flex-col gap-8 md:flex-row md:items-end md:justify-between">
         <div>
           <p className="font-serif text-xl">
-            Spazio <span className="italic">&amp;</span> L&apos;Élégance
+            Agostinelli <span className="italic">Studio</span>
           </p>
           <p className="mt-2 font-sans text-xs uppercase tracking-[0.2em] text-muted-foreground">
-            Salão de beleza e estética
+            Beleza, cuidado e acolhimento
           </p>
         </div>
 
@@ -41,12 +42,16 @@ export const SiteFooter = () => {
             href={WHATSAPP_URL}
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="WhatsApp do Spazio & L'Élégance"
+            aria-label="WhatsApp do Agostinelli Studio"
             className="transition-colors duration-500 hover:text-gold"
           >
             <WhatsAppIcon className="h-5 w-5" />
           </a>
         </div>
+
+        <a href="tel:+5547997448601" className="font-sans text-sm text-muted-foreground link-underline">
+          {PHONE_DISPLAY}
+        </a>
       </div>
     </footer>
   );

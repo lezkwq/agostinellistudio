@@ -6,6 +6,7 @@ import {
   INSTAGRAM_HANDLE,
   INSTAGRAM_URL,
   MAPS_URL,
+  PHONE_DISPLAY,
   WHATSAPP_URL,
 } from "@/lib/site";
 
@@ -42,7 +43,7 @@ export const Contato = () => {
                   href={INSTAGRAM_URL}
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label={`Instagram do Spazio & L'Élégance, ${INSTAGRAM_HANDLE}`}
+                  aria-label={`Instagram do Agostinelli Studio, ${INSTAGRAM_HANDLE}`}
                   className="transition-colors duration-500 hover:text-gold"
                 >
                   <Instagram className="h-5 w-5" aria-hidden="true" />
@@ -51,7 +52,7 @@ export const Contato = () => {
                   href={WHATSAPP_URL}
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label="Falar com o Spazio pelo WhatsApp"
+                  aria-label="Falar com o Agostinelli Studio pelo WhatsApp"
                   className="transition-colors duration-500 hover:text-gold"
                 >
                   <WhatsAppIcon className="h-5 w-5" />
@@ -60,6 +61,13 @@ export const Contato = () => {
                   {INSTAGRAM_HANDLE}
                 </span>
               </div>
+
+              <a
+                href="tel:+5547997448601"
+                className="link-underline mt-6 inline-block font-sans text-sm text-warm-white/80"
+              >
+                {PHONE_DISPLAY}
+              </a>
 
               <address className="mt-8 not-italic font-sans text-sm leading-relaxed text-warm-white/80">
                 <a
