@@ -26,7 +26,7 @@ export const Hero = () => {
           initial={reduceMotion ? false : { opacity: 0, y: 32 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.1, ease: [0.22, 1, 0.36, 1] }}
-          className="max-w-[22ch] md:max-w-[80vw] lg:max-w-[1120px] xl:max-w-[1200px]"
+          className="max-w-[90vw] md:max-w-[80vw] lg:max-w-[1120px] xl:max-w-[1200px]"
         >
           <p className="eyebrow text-warm-white/70 mb-6">Camboriú, Santa Catarina</p>
 
