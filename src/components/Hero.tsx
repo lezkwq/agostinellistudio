@@ -26,12 +26,13 @@ export const Hero = () => {
           initial={reduceMotion ? false : { opacity: 0, y: 32 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.1, ease: [0.22, 1, 0.36, 1] }}
-          className="max-w-[22ch] md:max-w-[18ch]"
+          className="max-w-[22ch] md:max-w-[80vw] lg:max-w-[1120px] xl:max-w-[1200px]"
         >
           <p className="eyebrow text-warm-white/70 mb-6">Camboriú, Santa Catarina</p>
 
-          <h1 className="display text-warm-white text-[3.25rem] sm:text-7xl lg:text-[7rem] xl:text-[7.5rem]">
-            Seu momento de beleza começa aqui.
+          <h1 className="display text-warm-white text-[3.25rem] sm:text-7xl md:text-7xl lg:text-[6.5rem] xl:text-[7rem]">
+            Seu momento
+            <br className="hidden md:block" /> de beleza começa aqui.
           </h1>
         </motion.div>
 
