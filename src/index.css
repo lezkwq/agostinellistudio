@@ -108,6 +108,24 @@
     @apply scale-[1.03];
   }
 
+  .reviews-marquee {
+    @apply w-full overflow-hidden;
+  }
+
+  .reviews-marquee-track {
+    animation: reviews-marquee 100s linear infinite;
+    will-change: transform;
+    pointer-events: none;
+    user-select: none;
+    touch-action: pan-y;
+  }
+
+  @keyframes reviews-marquee {
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
   .shell {
     @apply mx-auto w-full max-w-[1600px] px-6 md:px-10 lg:px-16;
   }
@@ -124,5 +142,11 @@
     animation-duration: 0.001ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.001ms !important;
+  }
+
+  .reviews-marquee-track {
+    animation-duration: 100s !important;
+    animation-iteration-count: infinite !important;
+    animation-play-state: running !important;
   }
 }
