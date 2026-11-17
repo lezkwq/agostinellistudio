@@ -3,7 +3,7 @@ import { ADDRESS_LINES, MAPS_URL } from "@/lib/site";
 
 export const Ambiente = () => {
   return (
-    <section className="bg-ivory py-24 md:py-36">
+    <section className="bg-ivory py-24 md:pb-20 md:pt-36">
       <div className="shell grid gap-12 lg:grid-cols-12 lg:gap-16">
         <Reveal className="lg:col-span-4">
           <p className="eyebrow text-gold">Agostinelli Studio</p>
@@ -60,7 +60,7 @@ export const Ambiente = () => {
               />
             </figure>
 
-            <figure className="img-zoom col-span-4 overflow-hidden md:col-span-3 md:col-start-10 md:mt-6">
+            <figure className="img-zoom col-span-4 overflow-hidden md:hidden">
               <img
                 src="/images/studio-facade.jpg"
                 alt="Fachada do Agostinelli Studio em Camboriú"

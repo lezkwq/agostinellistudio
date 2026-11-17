@@ -5,20 +5,23 @@ export const Hero = () => {
   const reduceMotion = useReducedMotion();
 
   return (
-    <section id="topo" className="relative min-h-[100svh] w-full overflow-hidden bg-ink">
-      <img
-        src="/images/hair-pink-bob.jpg"
-        alt="Corte curto com mechas rosas, visto de lado, feito no Agostinelli Studio"
-        className="absolute inset-0 h-full w-full object-cover object-[58%_34%] opacity-90"
-        fetchPriority="high"
-        decoding="async"
-      />
+    <section id="topo" className="relative min-h-[100svh] w-full overflow-hidden bg-ink md:h-[100svh] md:min-h-0">
+      <picture className="absolute inset-0">
+        <source media="(min-width: 768px)" srcSet="/images/hero-desktop-pink-profile.jpg" />
+        <img
+          src="/images/hair-pink-bob.jpg"
+          alt="Corte curto com mechas rosas, visto de lado, feito no Agostinelli Studio"
+          className="h-full w-full object-cover object-[58%_34%] opacity-90 md:object-[50%_50%]"
+          fetchPriority="high"
+          decoding="async"
+        />
+      </picture>
       <div
         aria-hidden="true"
         className="absolute inset-0 bg-ink/45 md:bg-ink/35"
       />
 
-      <div className="relative shell flex min-h-[100svh] flex-col justify-end pb-16 md:pb-20 pt-32">
+      <div className="relative shell flex min-h-[100svh] flex-col justify-end pb-16 pt-32 md:h-full md:min-h-0 md:pb-12 md:pt-24">
         <motion.div
           initial={reduceMotion ? false : { opacity: 0, y: 32 }}
           animate={{ opacity: 1, y: 0 }}
